@@ -1,4 +1,4 @@
-Ejemplos de scripts en bash para los CFGS Despliegue de Aplicaciones Web y Administración de Sistemas en Red
+Ejemplos de scripts en bash para Despliegue de Aplicaciones Web y Administración de Sistemas en Red
 ====================================================================================================
 
 Aquí tenéis distintas relaciones de scripts en bash, mejorables, y ordenados por categorías). Estaría muy bien que fueseis vosotros mismos quienes propusierais mejoras.
