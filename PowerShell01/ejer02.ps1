@@ -10,7 +10,7 @@ $param2=$args[1]
 write-host $param1 $param2
 #>
  
-param ($param1, $param2)
+param ($nombre, $saludo)
 write-host $param1 $param2
 
 if (-not $nombre -or -not $saludo) {
