@@ -90,12 +90,69 @@ $resultado=$num1%$num2
 "El resto de dividir el número $num1 entre el número $num2 es: " + $resultado
 
 
+<# 8 Operaciones 
+https://www.ediciones-eni.com/libro/powershell-core-y-windows-powershell-los-fundamentos-del-lenguaje-2a-edicion-9782409017322/introduccion
+#>
+clear-host
+"----------------------------------"
+"             Menú                 "
+"----------------------------------"
+[int]$valor1=read-host "Valor 1: "
+[int]$valor2=read-host "Valor 2: "
+""
+""
+"[Resultado]"
+$resultado=$valor1/$valor2
+write-host "$resultado"
 
 
+<# 10 Pedir Datos #>
+$nombre = Read-Host "Tu nombre: "
+$password = Read-Host -assecurestring "Tu clave: "
+#mostrar
+write-host "Hola $nombre"
+Clear-Host
+$YearCalc = Read-Host "¿cuando naciste?"
+$Now = (Get-Date -uformat "%Y") -$YearCalc
+$Maybe = $Now -1
+Write-Host "tu tienes  $Maybe o $Now años"
 
 
+<# 11 Menu Basico #>
+clear-host
+write-host "#############################"
+write-host ""
+write-host "            Menu             "
+write-host ""
+write-host "1. Ver version"
+write-host "2. Ver fecha"
+write-host "3. Ver ayuda"
+write-host "4. Salir"
+write-host "#############################"
+$opc = Read-Host "Tu opcion: "
+write-host ""
+write-host "introduciste [$opc]"
+#if(opc != 0 || opc >= 6)
+if($opc -ne 0  -or $opc -ge 6){
 
+switch($opc){
+  1 {write-host "version" -ForegroundColor Cyan
+     get-host
+  }
+  2 {write-host "fecha" -ForegroundColor Cyan
+     get-date
+     
+  }
+  3 {write-host "ayuda" -ForegroundColor Cyan
+     get-help
+  }
+  4 {write-host "fin" -ForegroundColor Red
+      exit
+  }
 
+}#fin switch
+
+}
 
 
 
@@ -163,19 +220,10 @@ $resultado=[math]::pow(1+$tasa/100,$n)
 $resultado=$resultado*$valor
 write-host "$resultado  periodo --> $n"
 
-}
 
 
-#29 introducir datos
-$nombre = Read-Host "Tu nombre: "
-$password = Read-Host -assecurestring "Tu clave: "
-#mostrar
-write-host "Hola $nombre"
-Clear-Host
-$YearCalc = Read-Host "¿cuando naciste?"
-$Now = (Get-Date -uformat "%Y") -$YearCalc
-$Maybe = $Now -1
-Write-Host "tu tienes  $Maybe o $Now años"
+
+
 
 #28 ejemplo de función con parámetros
 $g=9.81
