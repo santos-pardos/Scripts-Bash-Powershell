@@ -168,6 +168,8 @@ foreach($l in $lista){
 }
 
 <# 13 Operaciones Basicas #>
+""
+""
 $num1=99
 $num2=32.33
 "datos:"
@@ -181,8 +183,12 @@ write-host "suma: $suma"
 write-host "resta: $resta"
 write-host "producto: $producto"
 write-host "division: $division"
+""
+""
 
 <# 14 Operaciones Basicas #>
+""
+""
 $a=34
 $b=25
 $suma= $a+$b
@@ -193,7 +199,8 @@ write "$a + $b = $suma"
 write "$a - $b = $resta"
 write "$a * $b = $producto"
 write "$a / $b = $division"
-
+""
+""
 
 
 
