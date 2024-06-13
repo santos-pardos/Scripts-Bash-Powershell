@@ -1,32 +1,34 @@
 <#
 Ejemplos de PowerShell
-autor: yo
-fecha: 6-abril-2013
+autor: xxx
+fecha: 2024
 #>
 
-#37 emular el comando top de Linux
-while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }
 
-
-#36 uso de for
+#1 uso de for
 clear
 $ints = @('fer','camila','dan')
 for ($i=0; $i -le $ints.Length – 1; $i++)
 {Write-Host $ints[$i]}
 
 
-
-#35 paso de parametros
-$args
-"no. de parametros: $($args.count)"
-
-# 34 horoscopo chino
+# 2 horoscopo chino
+<# https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators?view=powershell-7.4 #>
 clear
 $datos = @{0="mono";1="gallo";2="perro";3="cerdo";4="rata";5="buey";6="tigre";7="conejo";8="dragon";9="serpiente";10="caballo";11="cabra"}
 $datos | Sort-Object
 $anyo=Read-Host "Introduce año: "
 $resto=$anyo%12
 Write-Host "Te corresponde el signo de: "$datos.get_Item($resto)
+
+#37 emular el comando top de Linux
+while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }
+
+
+#35 paso de parametros
+$args
+"no. de parametros: $($args.count)"
+
 
 
 
