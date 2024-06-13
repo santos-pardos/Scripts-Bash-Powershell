@@ -1,4 +1,4 @@
-# Versión 1.0
+
 $tipo = "Examen"
 $mes = "Junio 2024 "
 cls
