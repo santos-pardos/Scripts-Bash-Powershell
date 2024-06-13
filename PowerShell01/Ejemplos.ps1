@@ -52,6 +52,51 @@ Write-Host $_.fullname
 }
 
 
+<# 6 funciones y sumar #>
+function suma([Int]$valor1,[Int]$valor2)
+{
+    ($valor1)+($valor2)
+}
+ $valor1 = Read-Host "Introduzca número 1"
+$valor2 = Read-Host "Introduzca número 2"
+suma $valor1 $valor2
+
+
+<# 7 Operaciones #>
+#Sumar números
+$num1=5
+$num2=6
+$resultado=$num1+$num2
+"La suma del número $num1 y el número $num2 es: " + $resultado
+#Restar números
+$num1=10
+$num2=6
+$resultado=$num1-$num2
+"La resta del número $num1 y el número $num2 es: " + $resultado
+#Multiplicar números
+$num1=3
+$num2=6
+$resultado=$num1*$num2
+"La multiplicación del número $num1 y el número $num2 es: " + $resultado
+#Dividir números
+$num1=10
+$num2=5
+$resultado=$num1/$num2
+"La división del número $num1 entre el número $num2 es: " + $resultado
+#Resto de la división de números
+$num1=4
+$num2=2
+$resultado=$num1%$num2
+"El resto de dividir el número $num1 entre el número $num2 es: " + $resultado
+
+
+
+
+
+
+
+
+
 
 
 #37 emular el comando top de Linux
