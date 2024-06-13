@@ -1,5 +1,5 @@
 ﻿
-# Versión 1.0
+<# Ejemplo 02 #>
 param (
  [string]$nombre,
  [string]$saludo
