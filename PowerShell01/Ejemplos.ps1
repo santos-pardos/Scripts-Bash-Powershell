@@ -155,6 +155,51 @@ switch($opc){
 }
 
 
+<# 12 Bucle For #>
+$lista=200,250,300,350,400
+write-host "lista [$lista]"
+foreach($l in $lista){
+     if($l -eq 250){
+       "$l, valor encontrado"
+     }else{
+        $result=$l*2; 
+       write-host "$l   $l*2: $result"
+     }
+}
+
+<# 13 Operaciones Basicas #>
+$num1=99
+$num2=32.33
+"datos:"
+$num1
+$num2
+$suma=$num1 + $num2
+$resta=$num1 - $num2
+$producto=$num1 * $num2
+$division=$num1 / $num2
+write-host "suma: $suma"
+write-host "resta: $resta"
+write-host "producto: $producto"
+write-host "division: $division"
+
+<# 14 Operaciones Basicas #>
+$a=34
+$b=25
+$suma= $a+$b
+$resta= $a-$b
+$producto= $a*$b
+$division= $a/$b
+write "$a + $b = $suma"
+write "$a - $b = $resta"
+write "$a * $b = $producto"
+write "$a / $b = $division"
+
+
+
+
+
+
+
 
 #37 emular el comando top de Linux
 while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }
@@ -219,9 +264,6 @@ foreach ($n in 1..$periodo) {
 $resultado=[math]::pow(1+$tasa/100,$n) 
 $resultado=$resultado*$valor
 write-host "$resultado  periodo --> $n"
-
-
-
 
 
 
