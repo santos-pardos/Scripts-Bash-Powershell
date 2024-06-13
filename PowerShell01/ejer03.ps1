@@ -1,4 +1,5 @@
-﻿# Versión 1.0
+<# Ejemplo 03 #>
+
 Write-Host "`n"
 Write-Host "Introduzca numeros enteros"
 Write-Host "`n"
