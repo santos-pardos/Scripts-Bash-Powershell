@@ -42,6 +42,16 @@ $cadena="Mi gato come mucho"
 Write-Host "tamaño: " $cadena.Length
 Write-Host "ahora: " $cadena.Remove(3)
 
+<# 5 lista ficheros #>
+﻿Clear-Host
+$Path = "C:\Program Files\"
+Get-Childitem $Path -recurse -force | Foreach {
+If ($_.extension -eq ".txt") {
+Write-Host $_.fullname 
+     }
+}
+
+
 
 
 #37 emular el comando top de Linux
