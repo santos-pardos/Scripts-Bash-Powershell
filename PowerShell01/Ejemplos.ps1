@@ -4,15 +4,13 @@ autor: xxx
 fecha: 2024
 #>
 
-
-#1 uso de for
+<# 1 uso de for #>
 clear
 $ints = @('fer','camila','dan')
 for ($i=0; $i -le $ints.Length – 1; $i++)
 {Write-Host $ints[$i]}
 
-
-# 2 horoscopo chino
+<# 2 horoscopo chino #>
 <# https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators?view=powershell-7.4 #>
 clear
 $datos = @{0="mono";1="gallo";2="perro";3="cerdo";4="rata";5="buey";6="tigre";7="conejo";8="dragon";9="serpiente";10="caballo";11="cabra"}
@@ -21,18 +19,7 @@ $anyo=Read-Host "Introduce año: "
 $resto=$anyo%12
 Write-Host "Te corresponde el signo de: "$datos.get_Item($resto)
 
-#37 emular el comando top de Linux
-while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }
-
-
-#35 paso de parametros
-$args
-"no. de parametros: $($args.count)"
-
-
-
-
-#33 cuenta vocales
+<# 3 cuenta vocales #>
 Clear-Host
 $cadena=Read-Host "Introduce cadena"
 Write-Host "introduciste " $cadena
@@ -46,6 +33,24 @@ for($i=0;$i -le $cadena.Length;$i++){
  }
 }
 Write-Host "no. de vocales: "$cont"  ,vocales obtenidas: "$aux
+
+<# 4 cuenta vocales #>
+$correo="gatibal.gato@latinmail.com"
+$correo.Replace("latinmail","gmail")
+"gatibal.gato@gmail.com".Replace("@gmail.com","@yahoo.com.mx")
+$cadena="Mi gato come mucho"
+Write-Host "tamaño: " $cadena.Length
+Write-Host "ahora: " $cadena.Remove(3)
+
+
+
+#37 emular el comando top de Linux
+while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }
+
+
+#35 paso de parametros
+$args
+"no. de parametros: $($args.count)"
 
 
 #32 uso de expresiones regulares
