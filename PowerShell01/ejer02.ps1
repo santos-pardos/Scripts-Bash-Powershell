@@ -1,9 +1,17 @@
 ﻿
-<# Ejemplo 02 #>
+<# Ejemplo 02
 param (
  [string]$nombre,
  [string]$saludo
 )
+
+$param1=$args[0]
+$param2=$args[1]
+write-host $param1 $param2
+#>
+ 
+param ($param1, $param2)
+write-host $param1 $param2
 
 if (-not $nombre -or -not $saludo) {
  Write-Host "Para un uso correcto se debe ejecutar de la 
