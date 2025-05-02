@@ -1,7 +1,5 @@
 
-Actividades corregir
-Preguntas MIIS
-
+# ABRIR PowerShell (actualizar)
 ```
 Update-Help
 ```
