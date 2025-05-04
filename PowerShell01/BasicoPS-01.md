@@ -6,8 +6,8 @@ Update-Help
 
 # CMDLET (verbo nombre)
 ```
-get set remove new
-localuser localgrupo netadaptaer partition
+(get set remove new)
+(localuser localgrupo netadaptaer partition)
 Get-LocalUser
 Get-Date
 Clear-Host
@@ -131,14 +131,7 @@ Get-Date
 Clear-Host
 Write-Host "Bienvenidos a la PowerShell"
 Get-Date
-(Guardar como Ejemplo2.ps1)
-(Utilizar los iconos para ejecutar)
-(Ejecutar una linea seleccionando la linea)
-(Punto de ruptura en la linea 2 boton derecho, ejecutar + F11)
-(ingresa las siguientes lineas antes de Get-Date)
-$x=10
-$y=$x+1
-(Quitar punto de ruptura)
+(Ejemplo2.ps1)
 ```
 
 # FUNDAMENTOS SCRIPTS
@@ -162,8 +155,7 @@ $edad=30
 $nombre="Laia"
 $edad
 $nombre
-(salvar variables.ps1 y ejecutar)
-(desde CLI)
+(guardar variables.ps1 y ejecuta)
 $nombre.GetType()
 ```
 
@@ -203,7 +195,7 @@ Clear-Host
 $nombre="Laia"
 $apellido="Gomez"
 $nombreCompleto = $nombre + " " + $apellido
-WriteHost "Tu nombre completo es: " $nombreCompleto
+Write-Host "Tu nombre completo es: " $nombreCompleto
 (salvar y ejecutar)
 ```
 
