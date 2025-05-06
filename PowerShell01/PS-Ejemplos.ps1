@@ -748,3 +748,88 @@ Write-Host "hola mundo desde PowerShell"
 # 1. hola mundo con comillas
 "Hola mundo desde PowerShell"
 
+
+
+
+
+<# Ejemplo 01 #>
+$tipo = "Examen"
+$mes = "Junio 2024 "
+cls
+Write-Host "`n`n`n"
+Write-Host "$tipo $mes"
+
+# Set-ExecutionPolicy RemoteSigned
+# Set-ExecutionPolicy AllSigned
+
+
+
+
+
+
+
+﻿
+<# Ejemplo 02
+param (
+ [string]$nombre,
+ [string]$saludo
+)
+
+$param1=$args[0]
+$param2=$args[1]
+write-host $param1 $param2
+#>
+ 
+param ($nombre, $saludo)
+write-host $param1 $param2
+
+if (-not $nombre -or -not $saludo) {
+ Write-Host "Para un uso correcto se debe ejecutar de la 
+siguiente manera:"
+ Write-Host "`n"
+ Write-Host ": .\saludo2.ps1 -nombre ""nombre"" -saludo 
+""saludo"""
+ Write-Host "`n"
+ exit
+}
+
+Write-Host "$saludo $nombre"
+Write-Host "`n"
+
+
+
+
+
+
+<# Ejemplo 03 #>
+
+Write-Host "`n"
+Write-Host "Introduzca numeros enteros"
+Write-Host "`n"
+
+$num1 = Read-Host "Ingrese el primer numero entero"
+
+$num2 = Read-Host "Ingrese el segundo numero entero"
+Write-Host "`n"
+ 
+
+$num1 = [int]$num1
+$num2 = [int]$num2
+
+if ($num1 -gt $num2) {
+ Write-Host "$num1 es mayor que $num2"
+}
+elseif ($num1 -lt $num2) {
+ Write-Host "$num1 es menor que $num2"
+}
+else {
+ Write-Host "$num1 es igual a $num2"
+}
+
+
+
+
+
+
+
+
