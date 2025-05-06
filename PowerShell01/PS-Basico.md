@@ -270,8 +270,8 @@ FUNCIONES
 #Conexión con el servidor
 #Definición de funciones
 Function Conectividad ($datos){
-Foreach ($i in $datos) {
-$respuestas= Test-Connection $ip -count 1 -Quiet
+Foreach ($i in $datos){
+$respuestas= Test-Connection $i -count 1 -Quiet
 if ($respuesta -eq "true"){
 Write-Host "$i Conexion establecidad"
 } else {Write-Host "$i Error de conexión"}
@@ -280,6 +280,6 @@ Write-Host "$i Conexion establecidad"
 #Inicio del programa
 Clear-Host
 Write-Host "Conectividad"
-$datos=Get-Content c:\users\santos\servidores.txt
+$datos=Get-Content c:\Users\Administrator\servidores.txt
 Conectividad $datos
 ```
