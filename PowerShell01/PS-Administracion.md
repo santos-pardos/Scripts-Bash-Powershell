@@ -97,7 +97,3 @@ EQUIPO(Windows): win32_computersystem
 EQUIPO (Producto): win32_ComputerSystemProduct 
 ```
 
-# Links
-```
-https://techexpert.tips/es/powershell-es/
-```
