@@ -1,1 +1,0 @@
-Import-Csv "Ruta a tu CSV" | ForEach-Object { comandos para las acciones}
