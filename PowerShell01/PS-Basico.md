@@ -272,7 +272,7 @@ FUNCIONES
 Function Conectividad ($datos){
 Foreach ($i in $datos){
 $respuestas= Test-Connection $i -count 1 -Quiet
-if ($respuesta -eq "true"){
+if ($respuestas -eq "true"){
 Write-Host "$i Conexion establecidad"
 } else {Write-Host "$i Error de conexión"}
 }
